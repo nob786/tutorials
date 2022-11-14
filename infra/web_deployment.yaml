@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: web-container
-          image: mkbadeniyi/telepresence:telepresence_web
+          image: mkbadeniyi/telepresence_web
           imagePullPolicy: Always
           command:
             - sh

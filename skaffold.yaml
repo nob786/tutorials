@@ -4,11 +4,11 @@ metadata:
   name: testing
 build:
   artifacts:
-    - image: mkbadeniyi/telepresence:telepresence_web
+    - image: mkbadeniyi/telepresence_web
       context: web
       docker:
         dockerfile: Dockerfile
-    - image: mkbadeniyi/telepresence:telepresence_svc1
+    - image: mkbadeniyi/telepresence_svc1
       context: backend/svc1
       docker:
         dockerfile: Dockerfile

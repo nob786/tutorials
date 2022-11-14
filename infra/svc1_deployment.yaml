@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: svc1-container
-          image: mkbadeniyi/telepresence:telepresence_svc1
+          image: mkbadeniyi/telepresence_svc1
           imagePullPolicy: Always
           command:
             - sh

@@ -1,17 +1,13 @@
-name: Run-Daily
+name: Hello World Cron Job
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '*/5 * * * *'  # Run every 5 minutes
 
 jobs:
-  run-script:
+  print_hello_world:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2 
-      
-    - name: Run Script
-      run: |
-        echo "Hello world"
+      - name: Print Hello World
+        run: echo "Hello, World!"
